@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="avajobs" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\TFS\\HACKATON_AVANADE\\AVAJOBS\\MadHackatonAvanade\\AvaJobs\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\TFS\\HACKATON_AVANADE\\AVAJOBS\\MadHackatonAvanade\\AvaJobs\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:wlasoqrnfy.database.windows.net,1433;Initial Catalog=avajobs_db;User Id=gisiona@wlasoqrnfy;Password=avajobs" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\TFS\\HACKATON_AVANADE\\AVAJOBS\\MadHackatonAvanade\\AvaJobs\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

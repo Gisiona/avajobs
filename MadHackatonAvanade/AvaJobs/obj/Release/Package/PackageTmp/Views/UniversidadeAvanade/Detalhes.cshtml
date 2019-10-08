@@ -1,0 +1,176 @@
+﻿
+@{
+
+    Layout = "~/Views/Shared/_LayoutInterna.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalhes</title>
+    <style>
+
+
+        .panel-title > a:before {
+            /*float: right !important;*/
+            /*font-family: FontAwesome;*/
+            padding-right: 5px;
+        }
+
+        .panel-title > a.collapsed:before {
+            /*float: right !important;*/
+        }
+
+        .panel-title > a:hover,
+        .panel-title > a:active,
+        .panel-title > a:focus {
+            /*text-decoration: none;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header" style="background: url(/assets/img/banner1.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-wrapper">
+                        <h2 class="product-title">Learning Path</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="/"><i class="ti-home"></i> Home</a></li>
+                            <li class="current">Learning</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Main container Start -->
+    <div class="about section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 about-content">
+
+                    <h2 class="medium-title">Conteúdo</h2>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Introdução ao Java
+                                    </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-control-play"></span>  Introdução <span class="ti-time" style="float:right"> 07:39</span></div>
+                                </a>
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-control-play"></span>  Criando ambiente de desenvolvimento <span class="ti-time" style="float:right"> 12:24</span></div>
+                                </a>
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-control-play"></span>  Familiarizando com a IDE<span class="ti-time" style="float:right"> 6:12</span></div>
+                                </a>
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-book"></span>  Questionário <span class="ti-check-box" style="float:right"> 4 Questões</span></div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Conceitos Básicos
+                                    </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-control-play"></span>  Introdução <span class="ti-time" style="float:right"> 07:39</span></div>
+                                </a>
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-control-play"></span>  Criando ambiente de desenvolvimento <span class="ti-time" style="float:right"> 12:24</span></div>
+                                </a>
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-control-play"></span>  Familiarizando com a IDE<span class="ti-time" style="float:right"> 6:12</span></div>
+                                </a>
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-book"></span>  Questionário <span class="ti-check-box" style="float:right"> 4 Questões</span></div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Classes e Métodos
+                                    </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Arrays e Coleções
+                                    </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Orientação a Objeto
+                                    </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-control-play"></span>  Introdução <span class="ti-time" style="float:right"> 07:39</span></div>
+                                </a>
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-control-play"></span>  Criando ambiente de desenvolvimento <span class="ti-time" style="float:right"> 12:24</span></div>
+                                </a>
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-control-play"></span>  Familiarizando com a IDE<span class="ti-time" style="float:right"> 6:12</span></div>
+                                </a>
+                                <a href="#">
+                                    <div class="panel-body"><span class="ti-book"></span>  Questionário <span class="ti-check-box" style="float:right"> 4 Questões</span></div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="about-content">
+                        <h2 class="medium-title">Desenvolvimento Java</h2>
+                        <p class="desc">Consectuture adipiscing elit sed diam nonummy nibh euismod tincidunt laoreet dolore magna aliquam erat volutpat utwisi veniam.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jWTjHmuuvJs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est modi, saepe hic esse maxime quasi, sapiente ex debitis quis dolorum unde, neque quibusdam eveniet nobis enim porro repudiandae nesciunt quidem.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni delectus soluta adipisci beatae ullam quisquam, quia recusandae rem assumenda, praesentium porro sequi eaque doloremque tenetur incidunt officiis explicabo optio perferendis.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

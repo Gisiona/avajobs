@@ -1,0 +1,241 @@
+﻿@model AvaJobs.Models.LinkedINResVM
+
+@{
+    System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+    if (Model != null)
+    {
+        AvaJobs.Models.LinkedINResVM usuariologado = (AvaJobs.Models.LinkedINResVM)Model;
+
+        serializer.MaxJsonLength = Int32.MaxValue;
+        <script type="text/javascript">
+            var usuariologado = @Html.Raw(serializer.Serialize(usuariologado));
+            localStorage.setItem("user", JSON.stringify(usuariologado));
+            window.location = '/';
+        </script>
+
+
+    }
+}
+
+<!-- Category Section Start -->
+<section class="section text-center">
+    <div class="container">
+        <!-- Start Animations Text -->
+        <h1>
+
+            Universidade <span class="avajobs">avajobs</span>  do zero ao emprego
+        </h1>
+        <br>
+        <!-- End Animations Text -->
+        <!-- Start Buttons -->
+        <a rel="nofollow" target="_blank" href="/" class="btn btn-common btn-large"><i class="fa fa-cart"></i>Começar agora</a>
+    </div>
+
+</section>
+<!-- Category Section End -->
+<div class="search-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="color:#fff">Encontre o trabalho que se adapta à sua vida</h1><br><h2>Mais de <strong>200</strong> postos de trabalho esperam para alavancar sua carreira!!</h2>
+                <div class="content">
+                    <form method="post" action="">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Cargo / palavra-chave ou nome da empresa">
+                                    <i class="ti-time"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="email" placeholder="Cidade, estado, código postal">
+                                    <i class="ti-location-pin"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="search-category-container">
+                                    <label class="styled-select">
+                                        <select class="dropdown-product selectpicker">
+                                            <option>Todas Categorias</option>
+                                            <option>Financeiro</option>
+                                            <option>Desenvolvimento de Software</option>
+                                            <option>IT & Engineering</option>
+                                            <option>Education/Training</option>
+                                            <option>Art/Design</option>
+                                            <option>Sale/Markting</option>
+                                            <option>Healthcare</option>
+                                            <option>Science</option>
+                                            <option>Food Services</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-sm-6">
+                                <button type="button" class="btn btn-search-icon"><i class="ti-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="popular-jobs">
+                    <b>Palavras chaves: </b>
+                    <a href="#">UX Experience</a>
+                    <a href="#">Gerente de Projetos</a>
+                    <a href="#">Angular.Js</a>
+                    <a href="#">Node.js</a>
+                    <a href="#">Jquery.js</a>
+                    <a href="#">Vue.js</a>
+                    <a href="#">C#</a>
+                    <a href="#">Dot Net</a>
+                    <a href="#">Arquiteto de Software</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Find Job Section End -->
+<!-- Start Purchase Section -->
+<section class="section purchase" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+            <div class="section-content text-center">
+                <h1 class="title-text">
+                    Indique e ganhe
+                </h1>
+                <p>
+                    A <span class="avajobs">avajobs</span> tem vagas exclusivas para você.
+                    O que é bom fica ainda melhor: Indique a <span class="avajobs">avajobs</span> para seus amigos, garanta até R$1000 em premiações.
+                </p>
+                <a href="my-account.html" class="btn btn-common">Indique seus amigos</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Purchase Section -->
+<!-- Blog Section -->
+<section id="blog" class="section">
+    <!-- Container Starts -->
+    @Html.Partial("_ArtigosPartialView")
+</section>
+<!-- blog Section End -->
+<!-- Testimonial Section Start -->
+<section id="testimonial" class="section testimonialbg">
+    <div class="container">
+        <div class="row">
+            <div class="touch-slider" class="owl-carousel owl-theme">
+                <div class="item active text-center">
+                    <img class="img-member" src="~/assets/img/img1.jpg" alt="">
+                    <div class="client-info">
+                        <h2 class="client-name">Camila Ferreira Ribeiro  <span>(Desenvolvedora Sênior)</span></h2>
+                    </div>
+                    <p><i class="fa fa-quote-left quote-left"></i>Assim que fiquei disponível no mercado de trabalho minha maior dificuldade<br /> foi em encontrar um lugar aonde eu pudesse me desenvolver para a vaga antes de um teste.<br> Muitas entrevistas foram feitas com temas surpresas de questões que eu nunca vivenciei. <br />Com o AVAJobs pude aprimorar meus conhecimentos em  busca da vaga dos meus sonhos.<i class="fa fa-quote-right quote-right"></i>  </p>
+                </div>
+                <div class="item text-center">
+                    <img class="img-member" src="~/assets/img/img2.jpg" alt="">
+                    <div class="client-info">
+                        <h2 class="client-name">Sidnei Graciolli <span>(Analista de Sistemas)</span></h2>
+                    </div>
+                    <p><i class="fa fa-quote-left quote-left"></i> Site de fácil acesso, conteúdos originais e um designe impecável.  <i class="fa fa-quote-right quote-right"></i><br> Sempre que possível indico para outras pessoas e os comentários são os melhores possíveis!. </p>
+                </div>
+                <div class="item text-center">
+                    <img class="img-member" src="/assets/img/img3.jpg" alt="">
+                    <div class="client-info">
+                        <h2 class="client-name">Jonatas Santos <span>(Desenvolvedor Junior)</span></h2>
+                    </div>
+                    <p><i class="fa fa-quote-left quote-left"></i>Os artigos e desafios são muito bons, mesmo depois da contratação entro no site para estar <br /> por dentro de novos conteúdos relacionados à tecnologia. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonial Section End -->
+<!-- Clients Section -->
+<section class="clients section">
+    <div class="container">
+        <h2 class="section-title">
+            Clientes & Parceiros
+        </h2>
+        <div class="row">
+            <div id="clients-scroller">
+               
+                <div class="items">
+                    <img src="/assets/img/avanade-logo.svg" alt="">
+                </div>
+                <div class="items">
+                    <img src="/assets/img/logo-accenture.svg" alt="">
+                </div>
+                <div class="items">
+                    <img src="/assets/img/microsoft.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Client Section End -->
+<!-- Counter Section Start -->
+<section id="counter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="counting">
+                    <div class="icon">
+                        <i class="ti-briefcase"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Vagas Disponíveis</h2>
+                        <h1 class="counter">250</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="counting">
+                    <div class="icon">
+                        <i class="ti-user"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Usuários Cadastrados</h2>
+                        <h1 class="counter">5000</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="counting">
+                    <div class="icon">
+                        <i class="ti-write"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Universidade Avanade - Cursos</h2>
+                        <h1 class="counter">50</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="counting">
+                    <div class="icon">
+                        <i class="ti-heart"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Clientes</h2>
+                        <h1 class="counter">100</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Counter Section End -->
+<!-- Infobox Section Start -->
+<section class="infobox section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="info-text">
+                    <h2>Gostaria de acompanhar o AvaJobs mais de perto?</h2>
+                    <p>Acesse o <a href="#">Google Play</a> e faça o download do APP <span class="">AvaJobs</span></p>
+                </div>
+                <a href="#" class="btn btn-border">Google Play</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Infobox Section End -->

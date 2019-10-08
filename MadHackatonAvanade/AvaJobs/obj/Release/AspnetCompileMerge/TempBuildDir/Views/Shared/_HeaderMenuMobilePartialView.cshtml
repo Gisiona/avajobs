@@ -1,0 +1,44 @@
+﻿<ul class="wpb-mobile-menu">
+    <li>
+        <a class="active" href="/">Home</a>
+    </li>
+    <li>
+        <a href="/Vagas">
+            Vagas
+        </a>
+    </li>
+    <li>
+        <a href="about.html">
+            Aprenda <i class="fa fa-angle-down"></i>
+        </a>
+        <ul class="dropdown">
+            <li>
+                <a href="/Tutoriais">
+                    Tutorias
+                </a>
+            </li>
+            <li>
+                <a href="/UniversidadeAvanade">
+                    Universidade Avade
+                </a>
+            </li>
+            <li>
+                <a href="/Artigos">
+                    Artigos
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="/DesaficoCF">
+            Desafios
+        </a>
+    </li>
+    <li class="right nologado"><a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77mx9721mlv2q9&redirect_uri=http%3A%2F%2Flocalhost:20668%2F&state=987654321&scope=r_basicprofile"><i class="ti-lock"></i>Logar com LinkedIn</a></li>
+    <li class="left  nologado"><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal"><i class="ti-pencil-alt"></i> Cadastre-se</a></li>
+    <li class="right nologado"><a href="/login"><i class="ti-lock"></i>Log In</a></li>
+    <li class="right logado" id="logado" style="display:none"><img src="~/assets/img/minilinkedin.png" class="iconlinkedin" /><a><span id="dataUser"></span></a></li>
+    <li class="right logado" onclick="logout()" id="logout" style="display:none;cursor:pointer"><a>Logout</a></li>
+    <li class="right logado" style="display:none;cursor:pointer"><a href="http://localhost:4200/">Admin</a></li>
+
+</ul>

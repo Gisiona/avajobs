@@ -1,0 +1,11 @@
+﻿.iconlinkedin {
+    width: 19px;
+    position: absolute;
+    bottom: 2px;
+    left: -10px;
+    z-index: 999;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(230,78,7,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(230,78,7,1);
+    box-shadow: 0px 0px 5px 0px rgba(230,78,7,1);
+}

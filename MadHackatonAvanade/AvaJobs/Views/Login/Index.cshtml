@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutInterna.cshtml";
+}
+
+<div class="page-header" style="background: url(assets/img/banner1.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-wrapper">
+                    <h2 class="product-title">Minha Conta</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="/"><i class="ti-home"></i> Home</a></li>
+                        <li class="current">Minha Conta </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content" class="my-account">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-6 cd-user-modal">
+                <div class="my-account-form">
+                    <ul class="cd-switcher">
+                        <li><a class="selected" href="#0">LOGIN</a></li>
+                        <li><a href="#0">CADASTRAR</a></li>
+                    </ul>
+
+                    <div id="cd-login" class="is-selected">
+                        <div class="page-login-form">
+                            <form role="form" class="login-form">
+                                <div class="form-group is-empty">
+                                    <div class="input-icon">
+                                        <i class="ti-user"></i>
+                                        <input type="text" id="sender-email" class="form-control" name="email" placeholder="Username">
+                                    </div>
+                                    <span class="material-input"></span>
+                                </div>
+                                <div class="form-group is-empty">
+                                    <div class="input-icon">
+                                        <i class="ti-lock"></i>
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <span class="material-input"></span>
+                                </div>
+                                <button class="btn btn-common log-btn">Login</button>
+                                <div class="checkbox-item">
+                                    <div class="checkbox">
+                                        @*<label for="rememberme" class="rememberme">
+                                            <input name="rememberme" id="rememberme" value="forever" type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Remember Me
+                                        </label>*@
+                                    </div>
+                                    <p class="cd-form-bottom-message"><a href="#0">Esqueceu sua Senha?</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="cd-signup">
+                        <div class="page-login-form register">
+                            <form role="form" class="login-form">
+                                <div class="form-group is-empty">
+                                    <div class="input-icon">
+                                        <i class="ti-user"></i>
+                                        <input type="text" id="sender-email" class="form-control" name="name" placeholder="Usuario">
+                                    </div>
+                                    <span class="material-input"></span>
+                                </div>
+                                <div class="form-group is-empty">
+                                    <div class="input-icon">
+                                        <i class="ti-email"></i>
+                                        <input type="text" id="sender-email" class="form-control" name="email" placeholder="Email">
+                                    </div>
+                                    <span class="material-input"></span>
+                                </div>
+                                <div class="form-group is-empty">
+                                    <div class="input-icon">
+                                        <i class="ti-lock"></i>
+                                        <input type="password" class="form-control" placeholder="Senha">
+                                    </div>
+                                    <span class="material-input"></span>
+                                </div>
+                                <div class="form-group is-empty">
+                                    <div class="input-icon">
+                                        <i class="ti-lock"></i>
+                                        <input type="password" class="form-control" placeholder="Repetir Senha">
+                                    </div>
+                                    <span class="material-input"></span>
+                                </div>
+                                <button class="btn btn-common log-btn">Registrar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="page-login-form" id="cd-reset-password">
+                        <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+                        <form class="cd-form">
+                            <div class="form-group is-empty">
+                                <div class="input-icon">
+                                    <i class="ti-email"></i>
+                                    <input type="text" id="sender-email" class="form-control" name="email" placeholder="Email">
+                                </div>
+                                <span class="material-input"></span>
+                            </div>
+                            <p class="fieldset">
+                                <button class="btn btn-common log-btn" type="submit">Resetar Senha</button>
+                            </p>
+                        </form>
+                        <p class="cd-form-bottom-message"><a href="#0">Voltar para o Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
